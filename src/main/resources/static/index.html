@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ikenobo. El arte del Ikebana">
+    <title>Ikenobo</title>
+    <link rel="icon" type="image/png" href="./imgs/favicon_io (3)/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="header_nav">
+            <!-- LOGO-->
+            <a href="#home" class= "header_nav-logo">
+                <img src="./imgs/ikenobo03.png" alt="logo ikebana">
+            </a>
+            <!-- MENU-->
+            <div class="header_nav-content">
+                <ul class="header_nav-links">
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#ikebana">Ikebana</a></li>
+                    <li><a href="#carrito">Carrito</a></li>
+                    <li><a href="#expos">Expos</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#reseñas">Reseñas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="header_nav-icons">
+                <i class="fas fa-search" id="iconoBuscar" style="cursor: pointer;"></i>
+                <i class="fas fa-user" id="iconoAdmin" style="cursor: pointer;" title="Panel de Administración"></i>
+                <a href="#carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- WELCOME -->
+        <section id="home" class="container_welcome-area content-wrapper">
+            <div class="welcome-card">
+                <img src="./imgs/tulipanes_ikebana.png" alt="Tulipanes" class="welcome-img">
+                <div class="welcome-text">
+                    <h1 class="titulo">BIENVENIDOS A IKENOBO</h1>
+                    <p class="welcome-description">Como un poema o una pintura hecha con flores, el ikebana de IKENOBO expresa tanto la belleza de las flores como la belleza de los anhelos en nuestros propios corazones. El espíritu de IKENOBO se ha expandido no solo en Japón, sino en todo el mundo. Es nuestra más profunda esperanza que la belleza de IKENOBO sirva cada vez más como un medio para acercar a los pueblos del mundo.</p>
+                    <p class="txt-body">Descubrí el arte del Ikebana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDS DE PRODUCTOS -->
+        <section id="ikebana" class="container_products content-wrapper">
+            <h2 class="titulo">Nuestros IKEBANAS</h2>
+    
+                <div id="ikebanaContainer" class="container_products-grid">
+               
+                </div>
+        </section>
+
+        <!-- CARRITO -->
+        <section id="carrito" class="container_cart-area content-wrapper">
+            <h2 class="titulo">Tu carrito</h2>
+            <div class="cart-items">                
+                <ul></ul>
+                <p>Total a pagar $0</p>    
+            </div>            
+            <div>
+                <button id="btn_pagar" type="submit" class="btn-full2">Pagar</button>
+                <button id="btn_borrar" type="submit" class="btn-full3">Borrar</button>
+            <p id="mensajeCarrito"></p>
+            </div>
+            <div class="payment-icons">
+                <i class="fas fa-credit-card"></i>
+                <i class="fas fa-money-bill-alt"></i>                                
+            </div>
+        </section>
+
+         <!-- EXPOS-->
+         <section id="expos" class="container_expo-area content-wrapper">
+            <h2 class="titulo">EXPOS</h2>
+            <div class="cardsexpo-container">
+                <div class="cardexpo">
+                    <h3 class="expo-title">Arte Floral</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 15 de enero de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Centro Cultural San Martín</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Diseño Japonés</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 10 de marzo de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Galería Palermo</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Arte Minimalista</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 15 de enero de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Centro Cultural San Martín</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Fotografía & Naturaleza</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 10 de marzo de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Galería Palermo</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Escultura Efímera</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 5 de agosto de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Museo Nacional de Bellas Artes</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Arte y Naturaleza</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 8 de agosto de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> EcoCentro Mendoza</p>
+                </div>
+                <div class="cardexpo">
+                    <h3 class="expo-title">Diseño & Deco</h3>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 15 de septiembre de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> La Usina del Arte</p>
+                </div>
+                <div class="cardexpo">
+                    <h4 class="expo-title">Retrospectiva 2026</h4>
+                    <hr class="divider" />
+                    <p><i class="fa fa-calendar"></i> 20 de noviembre de 2026</p>
+                    <p><i class="fa fa-map-marker"></i> Fundación PROA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CURSOS -->
+        <section id="workshops" class="workshop-section content-wrapper">
+            <h4 class="titulo">WORKSHOPS</h4>
+            <div class="centered-video">
+                <p class="txt-body workshop-title">El arte del Ikebana</p>
+                <video controls class="workshop-video">
+                    <source src="./video/ikenobo_01.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+
+        <!-- RESEÑAS -->
+        <section id="reseñas" class="container_reviews content-wrapper">
+            <h2 class="titulo">RESEÑAS</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <p class="review-text">"Un curso increíble, muy bien explicado y con ejemplos prácticos"</p>
+                    <p class="review-author">Ana Llanes</p>
+                    <p class="review-date">12/01/2026</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    
+                    <p class="review-text">"En IKENOBO aprendí muchísimo sobre el arte del Ikebana."</p>
+                    <p class="review-author">Luis Martín</p>
+                    <p class="review-date">10/03/2026</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    
+                    <p class="review-text">"Las exposiciones son fascinantes, me encantaron"</p>
+                    <p class="review-author">Verónica Algace</p>
+                    <p class="review-date">05/08/2025</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    
+                    <p class="review-text">"En IKENOBO conocí un arte que ahora me apasiona"</p>
+                    <p class="review-author">Angie Ceriani</p>
+                    <p class="review-date">15/07/2025</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    
+                    <p class="review-text">"Excelentes workshops, totalmente recomendados"</p>
+                    <p class="review-author">Lara Agostina</p>
+                    <p class="review-date">20/06/2024</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+                <div class="review-card">
+                    
+                    <p class="review-text">"IKENOBO es lugar para conectar con la naturaleza y el arte"</p>
+                    <p class="review-author">Matías Farías</p>
+                    <p class="review-date">07/07/2026</p>
+                    <div class="review-rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- CONTACTO -->
+       <!-- <section id="contacto" class="container_contact-area padded-form content-wrapper">
+            <h2 class="titulo">CONTACTO</h2>
+            <div class="container_contact-box">  
+                <form action="https://formspree.io/f/meoqebee" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" class="btn-full2">Enviar</button>
+                </form>
+            </div>
+        </section>-->
+
+        <section id="contacto" class="container_contact-area padded-form content-wrapper">
+            <h2 class="titulo">CONTACTO</h2>
+            <div class="container_contact-box">
+                
+                <div class="contact-map">
+                    <div class="map-text">
+                        
+                        <p>Av. Casares 3450 - Cdad de Buenos Aires - Argentina</p>
+                    
+                    </div>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.5207358769735!2d-58.42422168477051!3d-34.581027580464236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb882df2c64d%3A0x5a3f847c5613b23d!2sAv.%20Casares%203450%2C%20C1425EWN%20CABA%2C%20Argentina!5e0!3m2!1ses!2sar!4v1697849587001!5m2!1ses!2sar" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <!-- Formulario -->
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/meoqebee" method="POST">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit" class="btn-full">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        
+    
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2026 IKENOBO</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

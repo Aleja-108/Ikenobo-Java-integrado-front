@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikenobo - Panel de Administración</title>
+    <link rel="stylesheet" href="../css/style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/dist/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <a href="../index.html" class="header_nav-logo">
+                <img src="../imgs/ikenobo03.png" alt="logo ikebana">
+            </a>
+            <ul class="header_nav-links">
+                <li><a href="../index.html">Volver a la Tienda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content-wrapper admin-container">
+        <h2 class="titulo">Panel de Gestión de Productos (Admin)</h2>
+        
+        <section class="admin-section">
+            <h3 class="titulo"><i class="fas fa-plus-circle"></i> Agregar Nuevo Producto</h3>
+            <form id="formAgregarProducto" class="admin-form">
+                <input type="text" id="adminNombre" placeholder="Nombre de la flor / arreglo" required class="admin-input">
+                <input type="number" id="adminPrecio" placeholder="Precio ($)" required class="admin-input">
+                <input type="number" id="adminStock" placeholder="Stock" required class="admin-input">
+                <input type="url" id="adminImagen" placeholder="URL de la imagen (Cloudinary)" required class="admin-input">
+                <select id="adminCategoria" required class="admin-input">
+                    <option value="" disabled selected>Seleccioná una Categoría</option>
+                    <option value="4">Gifts</option>       
+                    <option value="5">Deco</option>        
+                    <option value="6">Aniversario</option>  
+                </select>
+                <button type="submit" class="btn-guardar-admin">
+                    Guardar Producto 
+                </button>
+            </form>
+        </section>
+
+        <section class="admin-section">
+            <h3 class="titulo"><i class="fas fa-trash-alt"></i> Productos en Inventario</h3>
+            <div class="table-responsive">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Precio</th>
+                            <th>Acción</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaAdminProductos">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

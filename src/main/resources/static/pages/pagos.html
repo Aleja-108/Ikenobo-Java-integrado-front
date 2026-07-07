@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ikenobo. El arte del Ikebana">
+    <title>Pagos Ikenobo</title>
+    <link rel="icon" type="image/png" href="../imgs/favicon_io (3)/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header_nav">
+            <!-- LOGO-->
+            <a href="#home" class= "header_nav-logo">
+                <img src="../imgs/ikenobo03.png" alt="logo ikebana">
+            </a>
+            <!-- MENU-->
+            <div class="header_nav-icons">
+                <h4></h4>
+                
+            </div>
+            <div class="header_nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-heart"></i>
+                <i class="fas fa-user"></i>
+                <a href="../#carrito">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+ 
+    
+        <!-- PAGOS -->
+    <main>
+            
+
+        <section id="contacto" class="container_contact-area padded-form content-wrapper">
+            <h2 class="titulo">PAGO SEGURO</h2>
+            <div class="container_pay-box">  
+                <form action="https://formspree.io/f/meoqebee" method="POST">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="card-number">Número de Tarjeta</label>
+                    <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+
+                    <label for="expiry-date">Fecha de Expiración</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/AA">
+                            
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required placeholder="123">
+                            
+                    <button type="submit" class="btn-full2">Pagar Ahora</button>
+                </form>
+            </div>
+        </section>
+
+                
+    
+        <!-- RESUMEN DEL PEDIDO -->
+        <section id="contacto" class="container_contact-area padded-form content-wrapper">
+            <h2 class="titulo">Resumen del pedido</h2>
+            <div class="container_payment">  
+                <ul class="order-items">
+                    <li>
+                        <span class="item-name">Ikebana Iris</span>
+                        <span class="item-price">$55,000</span>
+                    </li>
+                    <li>
+                        <span class="item-name">Envío</span>
+                        <span class="item-price">$5,000</span>
+                    </li>
+                </ul>
+                <hr class="divider">
+                <div class="order-total">
+                    <span>Total:</span>
+                    <span class="total-price">$56,000</span>
+                </div>
+            </div>
+        </section>
+                
+        </main>
+        <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>© 2024 IKENOBO</p>
+    </footer>
+    <script src="./js/script.js"></script>
+    
+</body>
+</html>
